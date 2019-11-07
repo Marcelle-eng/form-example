@@ -3,47 +3,49 @@
 
 <head>
     <meta charset="utf-8">
-    
-</head>
-
-<body>
+    <title>Email Box</title>
     <style>
-        h3 {
-            color: aquamarine;
-            font-family: Georgia;
-            padding: 2rem;
+        .big {
+            background-size: 0rem;
         }
 
-    
+        .container,
+        h3 {
+            border: solid grey 1px;
+            color: purple;
+            font-family: Georgia;
+            padding: 0rem;
 
-        .container {
-            background-color: azure;
-          
         }
 
         .button {
-
-            background-color: aquamarine;
+            background-color: rgb(158, 206, 86);
         }
 
         .dot {
-            background-color: aquamarine;
+            background-color: greenyellow;
+        }
+
+        .name {
+            border: 1px solid grey;
         }
     </style>
-    <h1>Web Portfolio of Marco</h1>
+
+</head>
+
+<body>
+
+
     <form name="contact" method="POST" data-netlify="true">
-        <fieldset>
+        <fieldset class='big'>
             <legend class="container">Please feel free to send a message </legend>
 
             <p>
-                <label class = 'name'>Email <input type="email" name="email" /></label>
+                <label>Email <br> <input class='name' type="email" name="email" /></label>
             </p>
 
             <p>
-                <label class = 'name'>Message <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <h3></h3><label></label></h3>
+                <label>Message <br><textarea class='name' name="message"></textarea></label>
             </p>
             <p>
                 <fieldset>
